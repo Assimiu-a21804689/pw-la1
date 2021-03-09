@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Estudo PW casa"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Lab3"
+	}
+}
