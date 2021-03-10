@@ -8,15 +8,58 @@
 </head>
 <body>
     <h3>Comentários</h3>
-    <form action="post">
+    <form action="post" method="mailto:assimium2@gmail.com">
         <fieldset>
-            <legend>Gostou da página</legend>
-            <label for="gosto">Sim</label>
-            <input type="radio" name="sim" id="">
-            <label for="nao">Não</label>
-            <input type="radio" name="nao" id="">
+            <legend>Opinião sobre Página</legend>
+            <label>
+                Gostou da página:
+                 <label><input type="radio" name=gosto required> Sim </label> 
+                 <label> <input type="radio" name="gosto" id=""> Não</label>
+            </label>
+            <br><br>
+
+            <label>
+                A página está clara e compreencivel?
+                <label> <input type="radio" name="" id="" required> Sim </label>
+                <label><input type="radio" name="" id=""> Não</label>
+            </label>
+            <br>
+            <br>
+
+
+            <label>
+                Tem algum erro na página?
+                <label> <input type="radio" name="" id="" required> Sim </label>
+                <label><input type="radio" name="" id=""> Não</label>
             
+            </label>
+            <br>
+            <br>
+
+            <label>
+                Se a sua resposta for sim na pergunta anterior indique quais erros?<br>
+                <input type="textarea" style="width: 450px; height: 150px;">
+            </label>
+            <br>
+            <br>
+
+            <label>
+                Na escala de 0..100 quanto gosta da página?<br>
+                <input type="range" min="0" max="100" name="valorLido" value="0"
+                oninput="valorApresentado.value = parseInt(valorLido.value)">
+                <output name="valorApresentado" for="valorLido">0</output> %
+            
+            </label>
+            <br>
+            <br>
+
+            <label>
+                Opinião geral sobre a pagina.
+                <input type="textarea" style="width: 450px; height: 150px;" required>
+            </label>
+
         </fieldset>
+        <input type="submit" value="Enviar Comentario">
 
     </form>
 </body>
