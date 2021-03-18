@@ -29,6 +29,10 @@ a.comet:link{color: rgb(139, 133, 36);}
 a.comet:visited{color: rgb(6, 33, 51) ;}
 a.comet:hover{color: rgb(209, 131, 224); font-size: 40px;}
 
+a.html:link{color: rgb(228, 217, 22);}
+a.html:visited{color: rgb(14, 158, 248) ;}
+a.html:hover{color: rgb(97, 64, 104); font-size: 40px;}
+
 div > label{
     height: 25px;
     color: rgb(5, 5, 5);
@@ -40,4 +44,7 @@ iframe{
 }
 img{
     border-radius: 10px;
+}
+table{
+    background-color: coral;
 }
