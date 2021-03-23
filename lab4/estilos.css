@@ -1,50 +1,188 @@
-body{background-color:cornflowerblue;}
-h1{background-color: blue;}
-.primeira{
-    background-color: blueviolet;
-    border: 12px, black; 
+* {
+    box-sizing: border-box;
+}
+body, a, li, ul{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    background-color:  rgb(158, 142, 142);
+
 }
 
-a.ind:link{color: blue;}
-a.ind:visited{color: blue;}
-a.ind:hover{color: silver; font-size: 40px;}
-
-a.loc:link{color: blue;}
-a.loc:visited{color: rgb(66, 89, 192) ;}
-a.loc:hover{color: red; font-size: 40px;}
-
-a.mult:link{color: rgb(152, 190, 48);}
-a.mult:visited{color: rgb(44, 148, 91); font-size: 40px;}
-a.mult:hover{color: rgb(156, 25, 128); font-size: 40px;}
-
-a.inf:link{color: rgb(184, 174, 34);}
-a.inf:visited{color: rgb(21, 91, 138) ;}
-a.inf:hover{color: rgb(181, 89, 199); font-size: 40px;}
-
-a.quiz:link{color: rgb(36, 20, 63);}
-a.quiz:visited{color: rgb(21, 91, 138) ;}
-a.quiz:hover{color: rgb(34, 162, 179); font-size: 40px;}
-
-a.comet:link{color: rgb(139, 133, 36);}
-a.comet:visited{color: rgb(6, 33, 51) ;}
-a.comet:hover{color: rgb(209, 131, 224); font-size: 40px;}
-
-a.html:link{color: rgb(228, 217, 22);}
-a.html:visited{color: rgb(14, 158, 248) ;}
-a.html:hover{color: rgb(97, 64, 104); font-size: 40px;}
-
-div > label{
-    height: 25px;
-    color: rgb(5, 5, 5);
+header h1{
+    margin: 0px;
     display: flex;
+    justify-content: center;
+    
+    background-color: rgb(71, 64, 64);
+    color: blanchedalmond;
+    padding: 2%;
 }
-iframe{
-    border-radius: 10px;
-    border-style: solid;
+.cabecalho{
+    display: flex;
+    justify-content: center;
 }
-img{
+.menu{
+    display: flex;
+    margin-left: 5%;
+    padding: 2px;
+
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+     margin-right: 10%;
+}
+.linkNavegacao{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    background-color: rgb(63, 55, 55);
+    border-radius: 5px;
+    padding: 10px;
+}
+.linkNavegacao div a{
+    display: flex;
+    justify-content: center;
+    color: blanchedalmond;
+    padding: 6px;
+    border: 1px solid white;
+    background-color:rgb(49, 46, 46);
+    border-radius: 20px;
+    margin: 3px;
+}
+.linkNavegacao div a{
+    color: blanchedalmond;
+}
+
+.navegador{
+    display: flex;
+    
+    padding: 10px;
+    flex-direction: column;
+    color: rgb(75, 64, 64);
+    background-color: rgb(63, 55, 55);
+    border-radius: 5px;
+}
+
+.navegador nav a{
+    display: flex;
+    justify-content: center;
+    color: blanchedalmond;
+    padding: 6px;
+    border: 1px solid white;
+    background-color:rgb(49, 46, 46);
+    border-radius: 20px;
+    margin: 3px;
+
+}
+
+a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93px;
+    height: 72px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(158, 142, 142);
+}
+@media screen and (max-width: 600px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    a:hover{
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+    }
+}
+
+/*infomação HTML(INF)*/
+
+
+h3{
+    margin: 0px;
+    display: flex;
+    color: blanchedalmond;
+    justify-content: center;
+    padding: 15px;
+    background-color:  rgb(63, 55, 55);
+    margin-block-end: 20px;
+}
+caption{
+    padding: 10px;
+    background-color: rgb(145, 121, 116);
     border-radius: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  rgb(158, 142, 142);
 }
 table{
-    background-color: coral;
+    background-color: rgb(134, 111, 107);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+/*
+Local
+*/
+
+.local{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+/*Multimedia*/
+
+.multimedia{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 40px;
+    flex-wrap: wrap;
+
+}
+.multimedia div{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+picture{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+}
+.grandeIlha  a:hover{
+    background-image: url(./imagens/inha_bubaque_grande.jpg);
+    width: 700px;
+    height: 400px;
+}
+.bubaque a:hover{
+    background-image: url(./imagens/bubaque_grande.jpg);
+    width: 700px;
+    height: 400px;
+}
+.poesia{
+    display: flex;
 }
