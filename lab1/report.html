@@ -4,28 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
     <title>Reportagem</title>
 </head>
 <body>
-    <h1>Reportagem Da Primeira Página</h1>
-    <p>Com base na observação da primeira página da aulas anterior, obti infomação sobre IP do meu PC e do meu telemóvel
-         acessei este <a href="https://whatismyipaddress.com/ip-lookup">link</a>
-    </p>
+    <header>
+        <h1>Reportagem Da Primeira Página</h1>
+        
+    </header>
+    <main>
+        <section class="report">
+            <div>
+                <p>Com base na observação da primeira página da aulas anterior, obti infomação sobre IP do meu PC e do meu telemóvel
+                    acessei este <a href="https://whatismyipaddress.com/ip-lookup">link</a>
+                </p>
+            </div>
+            <div>
+                <h2>Endereços IP</h2>
+                    <p>1. Obtenha informação sobre o IP do seu PC e seu telemóvel.
+                obtenha e anote o endereço IP do seu computador. Pode obter isso de várias formas. A mais simples é perguntar no Google "what is my ip". Anote onde está localizado, usando por exemplo a ferramenta https://whatismyipaddress.com/ip-lookup. guarde uma imagem do mapa que localiza.
+                Obtenha e anote a mesma informação do seu telemóvel, se tiver dados móveis.</p>
+                <img src="img/IpPc.png" alt="">
+            </div>
+            <div>
+                <p>
+                    2. Obtenha informação sobre o IP do servidor Heroku onde está a sua app.
+                    Obtenha e anote o endereço IP do servidor Web onde está alojada a sua página no Heroku
+                    anote onde este está localizado, usando a ferramenta https://whatismyipaddress.com/ip-lookup. Guarde uma imagem do mapa que a localiza.
+                </p>
+            </div>
+                
+                <div>
+                    <picture>
+                        <img src="img/ipServidor.png" alt="">
+                            <h2>Percurso</h2>
+                            <p>1. A forma mais clássica é através da linha de comando e escreva tracert e especifique o endereço IP obtido anteriormente: > traceroute <endereço IP ou URL sua app></endere></p>
+                        <img src="img/rota.png" alt="">
+                    </picture>
+                </div>
+                    
+                <div>
+                    <p>
+                        2. Use a ferramenta GeoTraceroute, Em https://geotraceroute.com/, para visualizar graficamente por onde passam os pacotes IP, até chegar ao seu servidor Heroku. Escolha como origem (source) Portugal, e como destino o URL do seu site. Registe os saltos, indicando o país, e distância de cada salto. Quando fizer a página, pode procurar na Internet e inserir uma pequena image da bandeira do país. Com a ferramenta de Snip (Tecla Windows + Shift + S) copie a imagem do globo que cubra os saltos dados, e guarde-a como um ficheiro jpg ou png, para inserir também na página report.html.
+                    </p>
+                    <img src="img/map.png" alt="">
+                </div>
+                
+        </section>
+    </main>
 
-    <h2>Endereços IP</h2>
-    <p>1. Obtenha informação sobre o IP do seu PC e seu telemóvel.
-obtenha e anote o endereço IP do seu computador. Pode obter isso de várias formas. A mais simples é perguntar no Google "what is my ip". Anote onde está localizado, usando por exemplo a ferramenta https://whatismyipaddress.com/ip-lookup. guarde uma imagem do mapa que localiza.
-Obtenha e anote a mesma informação do seu telemóvel, se tiver dados móveis.</p>
-<img src="img/IpPc.png" alt="">
-<p>2. Obtenha informação sobre o IP do servidor Heroku onde está a sua app.
-    Obtenha e anote o endereço IP do servidor Web onde está alojada a sua página no Heroku
-    anote onde este está localizado, usando a ferramenta https://whatismyipaddress.com/ip-lookup. Guarde uma imagem do mapa que a localiza.</p>
-<img src="img/ipServidor.png" alt="">
-    <h2>Percurso</h2>
-    <p>1. A forma mais clássica é através da linha de comando e escreva tracert e especifique o endereço IP obtido anteriormente: > traceroute <endereço IP ou URL sua app></endere></p>
-<img src="img/rota.png" alt="">
+    <footer>
+        <div><a href="../index.html">Voltar Menu principal</a></div>
+    </footer>
+    
 
-<p>2. Use a ferramenta GeoTraceroute, Em https://geotraceroute.com/, para visualizar graficamente por onde passam os pacotes IP, até chegar ao seu servidor Heroku. Escolha como origem (source) Portugal, e como destino o URL do seu site. Registe os saltos, indicando o país, e distância de cada salto. Quando fizer a página, pode procurar na Internet e inserir uma pequena image da bandeira do país. Com a ferramenta de Snip (Tecla Windows + Shift + S) copie a imagem do globo que cubra os saltos dados, e guarde-a como um ficheiro jpg ou png, para inserir também na página report.html.</p>
-<img src="img/map.png" alt="">
 </body>
 </html>
