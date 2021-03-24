@@ -10,7 +10,7 @@ body, a, li, ul{
 
 }
 
-header h1{
+header h1, h3{
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -206,10 +206,8 @@ label{
 }
 
 
-main section{
+.htmlCss{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 10px;
-    margin: 20px;
+
 }
