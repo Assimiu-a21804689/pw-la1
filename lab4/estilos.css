@@ -206,3 +206,10 @@ label{
 }
 
 
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+}

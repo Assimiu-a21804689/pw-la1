@@ -206,3 +206,8 @@ label{
 }
 
 
+.htmlCss{
+    display: flex;
+    padding: 10px;
+
+}
